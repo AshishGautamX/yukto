@@ -5,8 +5,8 @@
 .cta-section {
     padding: var(--space-3xl) 0;
     background: #FFFFFF;
-    border-top: 1.5px solid #94A3B8;
-    border-bottom: 1.5px solid #94A3B8;
+    border-top: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--border-subtle);
     position: relative;
 }
 
@@ -17,18 +17,19 @@
 }
 
 .cta-title {
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-size: clamp(2.1rem, 3.6vw, 3rem);
     font-weight: 800;
-    color: #020617;
+    color: var(--text-primary);
     margin-bottom: var(--space-xs);
-    line-height: 1.15;
+    line-height: 1.18;
+    letter-spacing: -0.03em;
 }
 
 .cta-subtitle {
-    font-size: 1.22rem;
-    color: #0A0F1D;
-    font-weight: 500;
-    line-height: 1.65;
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1.68;
     margin-bottom: var(--space-xl);
 }
 
@@ -43,8 +44,8 @@
 
 .cta-note {
     font-family: var(--font-mono);
-    font-size: 0.88rem;
-    font-weight: 700;
-    color: #020617;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-muted);
     letter-spacing: 0.02em;
 }

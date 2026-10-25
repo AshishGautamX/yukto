@@ -37,15 +37,16 @@
     align-items: flex-start;
     gap: 1.15rem;
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     padding: 1.25rem 1.4rem;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
-    transition: border-color var(--ease-fast);
+    box-shadow: var(--shadow-card);
+    transition: border-color var(--ease-fast), box-shadow var(--ease-fast);
 }
 
 .contact-item:hover {
-    border-color: #2563EB;
+    border-color: var(--accent-cobalt);
+    box-shadow: var(--shadow-card-hover);
 }
 
 .contact-item-wa {
@@ -58,7 +59,7 @@
     height: 48px;
     border-radius: var(--radius-sm);
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
+    border: 1px solid var(--border-subtle);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,23 +75,23 @@
 
 .contact-label {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
-    font-weight: 800;
-    color: #020617;
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--text-muted);
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 0.25rem;
 }
 
 .contact-value {
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: #020617;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
 }
 
 .contact-wa-link {
     color: var(--color-wa-text);
-    font-weight: 800;
+    font-weight: 700;
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
@@ -104,10 +105,10 @@
 /* Contact Form Container */
 .contact-form-container {
     background: #FFFFFF;
-    border: 2px solid #94A3B8;
-    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
     padding: 2.35rem 2.15rem;
-    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+    box-shadow: var(--shadow-card);
 }
 
 .contact-form {
@@ -128,9 +129,9 @@
 
 .form-group label {
     font-family: var(--font-mono);
-    font-size: 0.82rem;
-    font-weight: 800;
-    color: #020617;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-primary);
 }
 
 .form-group input,
@@ -139,12 +140,12 @@
     width: 100%;
     padding: 0.85rem 1rem;
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
+    border: 1px solid var(--border-mid);
     border-radius: var(--radius-xs);
     font-family: inherit;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #020617;
+    font-size: 0.98rem;
+    font-weight: 450;
+    color: var(--text-primary);
     transition: all var(--ease-fast);
 }
 
@@ -152,7 +153,7 @@
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23020617' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%230F172A' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 0.9rem center;
     background-size: 16px;
@@ -160,14 +161,14 @@
 }
 
 .form-group select.form-select optgroup {
-    font-weight: 800;
-    color: #020617;
+    font-weight: 700;
+    color: var(--text-primary);
     background: #FFFFFF;
 }
 
 .form-group select.form-select option {
-    font-weight: 500;
-    color: #020617;
+    font-weight: 450;
+    color: var(--text-primary);
     padding: 0.45rem 0.65rem;
 }
 
@@ -177,7 +178,7 @@
     outline: none;
     background: #FFFFFF;
     border-color: var(--accent-cobalt);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.18);
 }
 
 .btn-submit {

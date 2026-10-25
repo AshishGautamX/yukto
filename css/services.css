@@ -34,9 +34,9 @@
     gap: 0.55rem;
     padding: 0.65rem 1.35rem;
     font-family: var(--font-sans);
-    font-size: 0.98rem;
-    font-weight: 700;
-    color: #020617;
+    font-size: 0.925rem;
+    font-weight: 600;
+    color: var(--text-secondary);
     background: transparent;
     border: 1.5px solid transparent;
     border-radius: var(--radius-full);
@@ -46,19 +46,19 @@
 }
 
 .tab-btn:hover {
-    color: #020617;
-    background: rgba(255, 255, 255, 0.85);
+    color: var(--text-primary);
+    background: #FFFFFF;
 }
 
 .tab-btn.active {
-    background: #020617;
+    background: var(--text-primary);
     color: #FFFFFF;
-    border-color: #020617;
-    box-shadow: 0 4px 14px rgba(2, 6, 23, 0.2);
+    border-color: var(--text-primary);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.2);
 }
 
 .tab-btn.active .tab-badge-num {
-    background: #1E293B;
+    background: rgba(255, 255, 255, 0.2);
     color: #FFFFFF;
 }
 
@@ -72,8 +72,8 @@
     background: var(--bg-surface-subtle);
     font-family: var(--font-mono);
     font-size: 0.72rem;
-    font-weight: 700;
-    color: var(--text-primary);
+    font-weight: 600;
+    color: var(--text-muted);
 }
 
 .tab-dot {
@@ -110,7 +110,7 @@
 
 .service-card {
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     padding: 2.25rem 1.95rem;
     display: flex;
@@ -118,14 +118,14 @@
     transition: transform var(--ease-base), box-shadow var(--ease-base), border-color var(--ease-base), opacity 0.25s ease;
     position: relative;
     opacity: 1;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    box-shadow: var(--shadow-card);
 }
 
 .service-card:hover {
     background: #FFFFFF;
-    border-color: #2563EB;
+    border-color: var(--accent-cobalt);
     box-shadow: var(--shadow-card-hover);
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 
 .service-card.is-hidden {
@@ -165,27 +165,27 @@
 
 .service-icon.icon-cobalt {
     background: var(--accent-cobalt-light);
-    border: 1.5px solid var(--accent-cobalt-border);
+    border: 1px solid var(--accent-cobalt-border);
     color: var(--accent-cobalt);
 }
 
 .service-icon.icon-violet {
     background: #FAF5FF;
-    border: 1.5px solid #DDD6FE;
+    border: 1px solid #DDD6FE;
     color: #7C3AED;
 }
 
 .service-icon.icon-emerald {
     background: #ECFDF5;
-    border: 1.5px solid #A7F3D0;
+    border: 1px solid #A7F3D0;
     color: #059669;
 }
 
 .service-pillar-pill {
     font-family: var(--font-mono);
-    font-size: 0.74rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
     padding: 0.25rem 0.75rem;
     border-radius: var(--radius-full);
     text-transform: uppercase;
@@ -194,33 +194,33 @@
 .pillar-build {
     background: var(--accent-cobalt-light);
     color: #1D4ED8;
-    border: 1.5px solid var(--accent-cobalt-border);
+    border: 1px solid var(--accent-cobalt-border);
 }
 
 .pillar-automate {
     background: #FAF5FF;
     color: #6D28D9;
-    border: 1.5px solid #DDD6FE;
+    border: 1px solid #DDD6FE;
 }
 
 .pillar-grow {
     background: #ECFDF5;
     color: #047857;
-    border: 1.5px solid #A7F3D0;
+    border: 1px solid #A7F3D0;
 }
 
 .service-card h3 {
-    font-size: 1.38rem;
-    font-weight: 800;
-    color: #020617;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
     margin-bottom: 0.85rem;
     line-height: 1.3;
 }
 
 .service-card p {
-    font-size: 1.05rem;
-    color: #0A0F1D;
-    font-weight: 500;
+    font-size: 1.02rem;
+    color: var(--text-secondary);
+    font-weight: 400;
     line-height: 1.68;
     margin-bottom: 1.65rem;
     flex-grow: 1;
@@ -232,19 +232,18 @@
     gap: 0.55rem;
     margin-top: auto;
     padding-top: 0.95rem;
-    border-top: 1.5px solid #E2E8F0;
+    border-top: 1px solid var(--border-subtle);
 }
 
 .benefit-tag {
     font-family: var(--font-mono);
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: #020617;
-    background: #F8FAFC;
-    border: 1.5px solid #94A3B8;
-    padding: 0.3rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--bg-surface-subtle);
+    border: 1px solid var(--border-subtle);
+    padding: 0.25rem 0.65rem;
     border-radius: var(--radius-xs);
-    box-shadow: var(--shadow-micro);
 }
 
 /* --------------------------------------------------------------------------
@@ -254,14 +253,14 @@
 .services-bundle-banner {
     margin-top: 3.5rem;
     background: #FFFFFF;
-    border: 2px solid #94A3B8;
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-lg);
     padding: 2.25rem 2.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08);
+    box-shadow: var(--shadow-card);
 }
 
 .bundle-badge {
@@ -269,29 +268,29 @@
     align-items: center;
     gap: 0.5rem;
     font-family: var(--font-mono);
-    font-size: 0.78rem;
-    font-weight: 800;
+    font-size: 0.76rem;
+    font-weight: 700;
     letter-spacing: 0.05em;
     padding: 0.3rem 0.8rem;
-    background: #F1F5F9;
-    border: 1.5px solid #94A3B8;
+    background: var(--accent-cobalt-light);
+    border: 1px solid var(--accent-cobalt-border);
     border-radius: var(--radius-full);
-    color: #020617;
+    color: var(--accent-cobalt);
     margin-bottom: 0.75rem;
 }
 
 .bundle-title {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #020617;
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
     line-height: 1.25;
 }
 
 .bundle-text {
-    font-size: 0.98rem;
+    font-size: 1.02rem;
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.65;
     max-width: 620px;
     margin: 0;
 }

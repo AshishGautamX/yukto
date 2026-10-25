@@ -35,17 +35,17 @@
 }
 
 .footer-tagline {
-    font-size: 1.2rem;
-    font-weight: 800;
-    color: #020617;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
 }
 
 .footer-subtext {
-    font-size: 1.02rem;
-    color: #0A0F1D;
+    font-size: 0.98rem;
+    color: var(--text-secondary);
     max-width: 380px;
     line-height: 1.65;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .footer-wa-block {
@@ -56,11 +56,11 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.92rem;
-    font-weight: 800;
+    font-size: 0.88rem;
+    font-weight: 600;
     color: var(--color-wa-text);
     background: var(--color-wa-bg);
-    border: 1.5px solid var(--color-wa-border);
+    border: 1px solid var(--color-wa-border);
     padding: 0.5rem 1.05rem;
     border-radius: var(--radius-sm);
     transition: all var(--ease-fast);
@@ -71,6 +71,7 @@
     color: #FFFFFF;
     border-color: var(--color-wa-hover);
     transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
 }
 
 /* Right Navigation Columns */
@@ -82,10 +83,10 @@
 
 .footer-column h4 {
     font-family: var(--font-mono);
-    font-size: 0.82rem;
-    font-weight: 800;
-    color: #020617;
-    letter-spacing: 0.1em;
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 1.25rem;
 }
@@ -97,15 +98,14 @@
 }
 
 .footer-column a {
-    font-size: 1rem;
-    color: #0A0F1D;
-    font-weight: 600;
+    font-size: 0.925rem;
+    color: var(--text-muted);
+    font-weight: 500;
     transition: color var(--ease-fast);
 }
 
 .footer-column a:hover {
     color: var(--accent-cobalt);
-    font-weight: 700;
 }
 
 /* Bottom Bar */
@@ -114,9 +114,9 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 1.85rem;
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: #020617;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text-muted);
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -128,8 +128,8 @@
 }
 
 .footer-legal a {
-    color: #020617;
-    font-weight: 600;
+    color: var(--text-muted);
+    font-weight: 500;
 }
 
 .footer-legal a:hover {
@@ -141,11 +141,11 @@
     align-items: center;
     gap: 0.5rem;
     font-family: var(--font-mono);
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #020617;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
+    border: 1px solid var(--border-subtle);
     padding: 0.3rem 0.75rem;
     border-radius: var(--radius-xs);
 }

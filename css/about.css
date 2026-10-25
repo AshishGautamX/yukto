@@ -24,12 +24,12 @@
 
 .about-definition-card {
     background: #FFFFFF;
-    border: 2px solid #94A3B8;
-    border-left: 5px solid var(--accent-cobalt);
+    border: 1px solid var(--border-subtle);
+    border-left: 4px solid var(--accent-cobalt);
     border-radius: var(--radius-md);
     padding: 1.5rem 1.8rem;
     margin: 1.5rem 0 2rem;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+    box-shadow: var(--shadow-card);
 }
 
 .definition-header {
@@ -42,40 +42,40 @@
 .definition-sanskrit {
     font-family: var(--font-mono);
     font-size: 1.25rem;
-    font-weight: 800;
+    font-weight: 700;
     color: var(--accent-cobalt);
     letter-spacing: -0.01em;
 }
 
 .definition-badge {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
-    font-weight: 800;
+    font-size: 0.72rem;
+    font-weight: 700;
     color: var(--accent-cobalt);
-    background: #EFF6FF;
-    border: 1.5px solid var(--accent-cobalt-border);
+    background: var(--accent-cobalt-light);
+    border: 1px solid var(--accent-cobalt-border);
     padding: 0.2rem 0.6rem;
     border-radius: var(--radius-xs);
     letter-spacing: 0.08em;
 }
 
 .definition-meaning {
-    font-size: 1.08rem;
-    color: #020617;
-    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    font-weight: 400;
     line-height: 1.68;
 }
 
 .definition-meaning strong {
     color: var(--accent-cobalt);
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .about-body p {
-    font-size: 1.08rem;
-    color: #0A0F1D;
-    font-weight: 500;
-    line-height: 1.75;
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1.72;
     margin-bottom: 1.35rem;
 }
 
@@ -85,10 +85,10 @@
     gap: 0.95rem;
     margin: 1.5rem 0;
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     padding: 1.5rem 1.75rem;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    box-shadow: var(--shadow-subtle);
 }
 
 .about-point-item {
@@ -108,9 +108,9 @@
 
 .about-point-item p {
     margin-bottom: 0;
-    font-size: 1.02rem;
+    font-size: 1rem;
     line-height: 1.65;
-    color: #020617;
+    color: var(--text-primary);
     font-weight: 600;
 }
 
@@ -149,16 +149,16 @@
 
 .visual-card {
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     padding: 1.65rem 1.75rem;
     transition: all var(--ease-base);
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    box-shadow: var(--shadow-card);
 }
 
 .visual-card:hover {
     background: #FFFFFF;
-    border-color: #2563EB;
+    border-color: var(--accent-cobalt);
     box-shadow: var(--shadow-card-hover);
     transform: translateY(-2px);
 }
@@ -182,41 +182,41 @@
 
 .visual-icon-box.cobalt {
     background: var(--accent-cobalt-light);
-    border: 1.5px solid var(--accent-cobalt-border);
+    border: 1px solid var(--accent-cobalt-border);
     color: var(--accent-cobalt);
 }
 
 .visual-icon-box.ochre {
     background: var(--highlight-ochre-light);
-    border: 1.5px solid var(--highlight-ochre-border);
+    border: 1px solid var(--highlight-ochre-border);
     color: var(--highlight-ochre);
 }
 
 .visual-icon-box.emerald {
     background: #ECFDF5;
-    border: 1.5px solid #A7F3D0;
+    border: 1px solid #A7F3D0;
     color: #059669;
 }
 
 .pillar-tag {
     font-family: var(--font-mono);
-    font-size: 0.78rem;
-    font-weight: 800;
-    color: #020617;
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: var(--text-muted);
     letter-spacing: 0.06em;
 }
 
 .visual-card h4 {
-    font-size: 1.25rem;
-    font-weight: 800;
-    color: #020617;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
     margin-bottom: 0.45rem;
 }
 
 .visual-card p {
-    font-size: 1.02rem;
-    color: #0A0F1D;
-    font-weight: 500;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 400;
     line-height: 1.65;
     margin-bottom: 0;
 }
@@ -230,11 +230,11 @@
 
 .trust-pill {
     font-family: var(--font-mono);
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: #020617;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-muted);
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
+    border: 1px solid var(--border-subtle);
     padding: 0.4rem 0.8rem;
     border-radius: var(--radius-sm);
 }

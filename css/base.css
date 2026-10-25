@@ -90,40 +90,47 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
     font-weight: 700;
     color: var(--text-primary);
-    letter-spacing: -0.03em;
-    line-height: 1.2;
+    letter-spacing: -0.025em;
+    line-height: 1.22;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
 h1 {
-    font-size: clamp(2.7rem, 4.8vw, 4.3rem);
-    letter-spacing: -0.04em;
+    font-size: clamp(2.6rem, 4.6vw, 4.1rem);
+    letter-spacing: -0.035em;
     font-weight: 800;
+    line-height: 1.12;
     color: var(--text-primary);
 }
 
 h2 {
-    font-size: clamp(2.05rem, 3.4vw, 2.95rem);
-    font-weight: 800;
+    font-size: clamp(1.95rem, 3.2vw, 2.75rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
     color: var(--text-primary);
 }
 
 h3 {
-    font-size: clamp(1.3rem, 2vw, 1.65rem);
-    font-weight: 800;
+    font-size: clamp(1.25rem, 2vw, 1.55rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
     color: var(--text-primary);
 }
 
 h4 {
-    font-size: 1.15rem;
-    font-weight: 700;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     color: var(--text-primary);
 }
 
 p {
-    font-size: 1.08rem;
-    line-height: 1.72;
+    font-size: 1.05rem;
+    line-height: 1.68;
     color: var(--text-secondary);
+    font-weight: 400;
 }
 
 .hero-accent,
@@ -149,16 +156,17 @@ p {
     align-items: center;
     gap: 0.5rem;
     font-family: var(--font-mono);
-    font-size: 0.8rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--accent-cobalt);
     background: var(--accent-cobalt-light);
-    border: 1.5px solid var(--accent-cobalt-border);
-    padding: 0.3rem 0.85rem;
-    border-radius: var(--radius-sm);
-    margin-bottom: 1.1rem;
+    border: 1px solid var(--accent-cobalt-border);
+    padding: 0.35rem 0.95rem;
+    border-radius: var(--radius-full);
+    margin-bottom: 1.15rem;
+    box-shadow: 0 1px 2px rgba(37, 99, 235, 0.08);
 }
 
 .section-header {
@@ -179,11 +187,11 @@ p {
 }
 
 .section-description {
-    font-size: 1.18rem;
+    font-size: 1.125rem;
     color: var(--text-secondary);
     max-width: 640px;
     line-height: 1.68;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /* Buttons */
@@ -193,8 +201,8 @@ p {
     justify-content: center;
     gap: 0.55rem;
     padding: 0.75rem 1.4rem;
-    font-size: 0.95rem;
-    font-weight: 700;
+    font-size: 0.9375rem;
+    font-weight: 600;
     border-radius: var(--radius-sm);
     transition: all var(--ease-fast);
     cursor: pointer;
@@ -204,14 +212,14 @@ p {
 .btn-primary {
     background: var(--accent-cobalt);
     color: #FFFFFF;
-    border: 1.5px solid var(--accent-cobalt-hover);
-    box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+    border: 1px solid var(--accent-cobalt-hover);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.28);
 }
 
 .btn-primary:hover {
     background: var(--accent-cobalt-hover);
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
-    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.38);
+    transform: translateY(-1px);
     color: #FFFFFF;
 }
 
@@ -222,33 +230,34 @@ p {
 
 .btn-secondary {
     background: #FFFFFF;
-    color: #020617;
-    border: 2px solid #020617;
-    font-weight: 700;
+    color: var(--text-primary);
+    border: 1.5px solid var(--border-mid);
+    font-weight: 600;
     box-shadow: var(--shadow-micro);
 }
 
 .btn-secondary:hover {
-    background: #020617;
-    border-color: #020617;
-    color: #FFFFFF;
-    transform: translateY(-2px);
+    background: var(--bg-surface-hover);
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-subtle);
 }
 
 .btn-ghost {
     background: #FFFFFF;
-    color: #020617;
-    border: 2px solid #020617;
-    font-weight: 700;
+    color: var(--text-primary);
+    border: 1.5px solid var(--border-mid);
+    font-weight: 600;
     box-shadow: var(--shadow-micro);
 }
 
 .btn-ghost:hover {
-    background: #020617;
-    border-color: #020617;
-    color: #FFFFFF;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
+    background: var(--bg-surface-hover);
+    border-color: var(--accent-cobalt);
+    color: var(--accent-cobalt);
+    box-shadow: var(--shadow-subtle);
+    transform: translateY(-1px);
 }
 
 .btn .btn-arrow {

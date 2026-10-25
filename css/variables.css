@@ -4,24 +4,24 @@
    ========================================================================== */
 
 :root {
-    /* Canvas & Surfaces (Refined Cool Slate Tone - Richer contrast for white cards) */
-    --bg-canvas: #E2E8F0;
+    /* Canvas & Surfaces — Luminous modern tech canvas with pure white elevated cards */
+    --bg-canvas: #F8FAFC;
     --bg-surface: #FFFFFF;
-    --bg-surface-subtle: #CBD5E1;
-    --bg-surface-hover: #F1F5F9;
-    --bg-surface-active: #94A3B8;
+    --bg-surface-subtle: #F1F5F9;
+    --bg-surface-hover: #F8FAFC;
+    --bg-surface-active: #E2E8F0;
 
-    /* Technical Borders - Crisp, high visibility and defined */
-    --border-subtle: #94A3B8;
-    --border-mid: #64748B;
-    --border-strong: #334155;
-    --border-dark: #020617;
+    /* Technical Borders — Elegant, calibrated hairlines and crisp interactive boundaries */
+    --border-subtle: #E2E8F0;
+    --border-mid: #CBD5E1;
+    --border-strong: #94A3B8;
+    --border-dark: #0F172A;
 
-    /* Typography & Ink (Ultra-High Contrast Solid Obsidian & Midnight Slate - Zero Grey) */
-    --text-primary: #020617;     /* Purest deep obsidian black */
-    --text-secondary: #0A0F1D;   /* Solid midnight black-slate for body, descriptions & lists */
-    --text-muted: #0F172A;       /* Deep obsidian-slate for badges, tags, metadata, and timestamps */
-    --text-faint: #1E293B;       /* Solid dark navy-slate for counters, numbers & subtle labels */
+    /* Typography & Ink Hierarchy (Executive Contrast & Zero Visual Mud) */
+    --text-primary: #0F172A;     /* Deep slate navy — crisp, authoritative heading ink */
+    --text-secondary: #334155;   /* Slate-700 — rich, comfortable body copy and descriptions */
+    --text-muted: #64748B;       /* Slate-500 — clear hierarchy for badges, metadata, and labels */
+    --text-faint: #94A3B8;       /* Slate-400 — subtle counters, icons & inactive borders */
 
     /* Single Primary Accent: International Klein / Royal Blue (#2563EB) */
     --accent-cobalt: #2563EB;
@@ -52,18 +52,20 @@
     --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, monospace;
 
-    /* Restrained Elevations */
-    --shadow-micro: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
-    --shadow-subtle: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.03);
-    --shadow-card-hover: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
-    --shadow-dropdown: 0 12px 30px -10px rgba(0, 0, 0, 0.1);
+    /* Premium Elevations & Multilayer Soft Shadows */
+    --shadow-micro: 0 1px 2px 0 rgba(15, 23, 42, 0.05);
+    --shadow-subtle: 0 1px 3px 0 rgba(15, 23, 42, 0.07), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+    --shadow-card: 0 4px 6px -1px rgba(15, 23, 42, 0.05), 0 2px 4px -2px rgba(15, 23, 42, 0.03);
+    --shadow-card-hover: 0 16px 32px -8px rgba(15, 23, 42, 0.09), 0 4px 8px -2px rgba(15, 23, 42, 0.04);
+    --shadow-glow-cobalt: 0 8px 24px -4px rgba(37, 99, 235, 0.35);
+    --shadow-dropdown: 0 12px 30px -10px rgba(15, 23, 42, 0.12);
 
     /* Radii */
-    --radius-xs: 4px;
-    --radius-sm: 6px;
-    --radius-md: 10px;
-    --radius-lg: 14px;
-    --radius-xl: 20px;
+    --radius-xs: 6px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 22px;
     --radius-full: 9999px;
 
     /* Spacing */

@@ -38,13 +38,13 @@
     align-items: center;
     gap: 0.6rem;
     font-family: var(--font-mono);
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
-    color: #020617;
+    color: var(--text-secondary);
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
+    border: 1px solid var(--border-mid);
     border-radius: var(--radius-full);
     padding: 0.4rem 1rem;
     box-shadow: var(--shadow-micro);
@@ -77,22 +77,22 @@
 }
 
 .kicker-sep {
-    color: #475569;
-    font-weight: 800;
+    color: var(--border-strong);
+    font-weight: 600;
 }
 
 .kicker-item {
-    color: #020617;
-    font-weight: 700;
+    color: var(--text-secondary);
+    font-weight: 600;
 }
 
 .hero-title {
     font-family: var(--font-display);
-    font-size: clamp(2.8rem, 4.6vw, 4.2rem);
+    font-size: clamp(2.6rem, 4.6vw, 4.1rem);
     font-weight: 800;
-    color: #020617;
+    color: var(--text-primary);
     line-height: 1.12;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.035em;
     margin-bottom: 1.35rem;
     text-align: left;
     animation: heroSlideUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
@@ -106,10 +106,10 @@
 }
 
 .hero-subtitle {
-    font-size: 1.22rem;
-    color: #0A0F1D;
-    font-weight: 500;
-    line-height: 1.72;
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1.68;
     max-width: 550px;
     margin: 0 0 1.85rem 0;
     text-align: left;
@@ -203,7 +203,7 @@
     align-items: center;
     gap: 1.85rem;
     padding-top: 1.85rem;
-    border-top: 2px solid #94A3B8;
+    border-top: 1px solid var(--border-subtle);
     width: 100%;
     max-width: 530px;
     animation: heroSlideUp 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both;
@@ -216,27 +216,27 @@
 }
 
 .hero-stat-number {
-    font-family: var(--font-mono);
-    font-size: 2.25rem;
+    font-family: var(--font-display);
+    font-size: 2.15rem;
     font-weight: 800;
-    color: #020617;
+    color: var(--text-primary);
     line-height: 1;
     letter-spacing: -0.03em;
     margin-bottom: 0.35rem;
 }
 
 .hero-stat-label {
-    font-size: 0.82rem;
-    font-weight: 800;
+    font-size: 0.78rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: #0A0F1D;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
 }
 
 .hero-stat-divider {
-    width: 2px;
+    width: 1px;
     height: 38px;
-    background: #94A3B8;
+    background: var(--border-subtle);
     flex-shrink: 0;
 }
 
@@ -276,9 +276,9 @@
     max-width: 540px;
     height: 440px;
     background: #FFFFFF;
-    border: 2px solid #94A3B8;
-    border-radius: 30px;
-    box-shadow: 0 20px 48px -12px rgba(15, 23, 42, 0.12), 0 2px 6px rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-card-hover);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -349,13 +349,13 @@
 .network-node {
     position: absolute;
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
-    border-radius: 16px;
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
     padding: 0.52rem 0.82rem;
     display: flex;
     align-items: center;
     gap: 0.65rem;
-    box-shadow: 0 6px 18px -4px rgba(15, 23, 42, 0.1);
+    box-shadow: var(--shadow-card);
     z-index: 4;
     transition: transform var(--ease-base), box-shadow var(--ease-base), border-color var(--ease-base);
     cursor: default;
@@ -364,8 +364,8 @@
 
 .network-node:hover {
     transform: translateY(-2px);
-    box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.16);
-    border-color: #2563EB;
+    box-shadow: var(--shadow-card-hover);
+    border-color: var(--accent-cobalt);
 }
 
 .node-top-left {
@@ -395,9 +395,9 @@
 
 .node-title {
     font-family: var(--font-display);
-    font-size: 0.94rem;
-    font-weight: 800;
-    color: #020617;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--text-primary);
     line-height: 1.15;
 }
 

@@ -15,20 +15,20 @@
 
 .problem-card {
     background: #FFFFFF;
-    border: 1.5px solid #94A3B8;
+    border: 1px solid var(--border-subtle);
     border-radius: var(--radius-md);
     padding: 2.15rem 1.95rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    box-shadow: var(--shadow-card);
     transition: all var(--ease-base);
     position: relative;
 }
 
 .problem-card:hover {
-    border-color: #2563EB;
+    border-color: var(--accent-cobalt);
     box-shadow: var(--shadow-card-hover);
-    transform: translateY(-4px);
+    transform: translateY(-3px);
 }
 
 .problem-card-header {
@@ -50,48 +50,48 @@
 
 .problem-icon-wrapper.cobalt {
     background: var(--accent-cobalt-light);
-    border: 1.5px solid var(--accent-cobalt-border);
+    border: 1px solid var(--accent-cobalt-border);
     color: var(--accent-cobalt);
 }
 
 .problem-icon-wrapper.ochre {
     background: var(--highlight-ochre-light);
-    border: 1.5px solid var(--highlight-ochre-border);
+    border: 1px solid var(--highlight-ochre-border);
     color: var(--highlight-ochre);
 }
 
 .problem-icon-wrapper.red {
     background: #FEF2F2;
-    border: 1.5px solid #FECACA;
+    border: 1px solid #FECACA;
     color: #DC2626;
 }
 
 .problem-icon-wrapper.emerald {
     background: #ECFDF5;
-    border: 1.5px solid #A7F3D0;
+    border: 1px solid #A7F3D0;
     color: #059669;
 }
 
 .problem-card-num {
     font-family: var(--font-mono);
     font-size: 0.85rem;
-    font-weight: 800;
-    color: #020617;
+    font-weight: 700;
+    color: var(--text-faint);
     letter-spacing: 0.05em;
 }
 
 .problem-card h3 {
-    font-size: 1.35rem;
-    font-weight: 800;
-    color: #020617;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
     margin-bottom: 0.75rem;
     line-height: 1.3;
 }
 
 .problem-card p {
-    font-size: 1.05rem;
-    color: #0A0F1D;
-    font-weight: 500;
+    font-size: 1.02rem;
+    color: var(--text-secondary);
+    font-weight: 400;
     line-height: 1.68;
     margin-bottom: 1.65rem;
     flex-grow: 1;
@@ -99,11 +99,11 @@
 
 .problem-tag {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
-    font-weight: 800;
-    color: #020617;
-    background: #F1F5F9;
-    border: 1.5px solid #94A3B8;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--bg-surface-subtle);
+    border: 1px solid var(--border-subtle);
     padding: 0.25rem 0.65rem;
     border-radius: var(--radius-xs);
     width: fit-content;
@@ -113,25 +113,25 @@
     margin: 3.5rem auto 0;
     max-width: 780px;
     background: #FFFFFF;
-    border: 2px solid #94A3B8;
-    border-left: 5px solid var(--accent-cobalt);
+    border: 1px solid var(--border-subtle);
+    border-left: 4px solid var(--accent-cobalt);
     border-radius: var(--radius-md);
     padding: 2rem 2.5rem;
     text-align: center;
-    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    box-shadow: var(--shadow-card);
 }
 
 .callout-text {
-    font-size: 1.25rem;
-    color: #020617;
-    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    font-weight: 500;
     line-height: 1.6;
 }
 
 .callout-highlight {
     display: block;
-    font-size: 1.35rem;
-    font-weight: 800;
-    color: #020617;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text-primary);
     margin-top: 0.35rem;
 }
