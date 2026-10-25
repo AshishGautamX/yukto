@@ -1,0 +1,137 @@
+/* ==========================================================================
+   PROBLEM SECTION (THE CHALLENGE) — Fixes Screenshot 3
+   ========================================================================== */
+
+.problem {
+    padding: var(--space-3xl) 0;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.problem-card {
+    background: #FFFFFF;
+    border: 1.5px solid #94A3B8;
+    border-radius: var(--radius-md);
+    padding: 2.15rem 1.95rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    transition: all var(--ease-base);
+    position: relative;
+}
+
+.problem-card:hover {
+    border-color: #2563EB;
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-4px);
+}
+
+.problem-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.problem-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.problem-icon-wrapper.cobalt {
+    background: var(--accent-cobalt-light);
+    border: 1.5px solid var(--accent-cobalt-border);
+    color: var(--accent-cobalt);
+}
+
+.problem-icon-wrapper.ochre {
+    background: var(--highlight-ochre-light);
+    border: 1.5px solid var(--highlight-ochre-border);
+    color: var(--highlight-ochre);
+}
+
+.problem-icon-wrapper.red {
+    background: #FEF2F2;
+    border: 1.5px solid #FECACA;
+    color: #DC2626;
+}
+
+.problem-icon-wrapper.emerald {
+    background: #ECFDF5;
+    border: 1.5px solid #A7F3D0;
+    color: #059669;
+}
+
+.problem-card-num {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #020617;
+    letter-spacing: 0.05em;
+}
+
+.problem-card h3 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #020617;
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+.problem-card p {
+    font-size: 1.05rem;
+    color: #0A0F1D;
+    font-weight: 500;
+    line-height: 1.68;
+    margin-bottom: 1.65rem;
+    flex-grow: 1;
+}
+
+.problem-tag {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #020617;
+    background: #F1F5F9;
+    border: 1.5px solid #94A3B8;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-xs);
+    width: fit-content;
+}
+
+.problem-callout {
+    margin: 3.5rem auto 0;
+    max-width: 780px;
+    background: #FFFFFF;
+    border: 2px solid #94A3B8;
+    border-left: 5px solid var(--accent-cobalt);
+    border-radius: var(--radius-md);
+    padding: 2rem 2.5rem;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.callout-text {
+    font-size: 1.25rem;
+    color: #020617;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.callout-highlight {
+    display: block;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #020617;
+    margin-top: 0.35rem;
+}

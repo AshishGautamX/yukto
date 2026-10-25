@@ -1,0 +1,59 @@
+/* ==========================================================================
+   WHY YUKTO SECTION
+   ========================================================================== */
+
+.why-us {
+    padding: var(--space-3xl) 0;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.why-card {
+    background: #FFFFFF;
+    border: 1.5px solid #94A3B8;
+    border-radius: var(--radius-md);
+    padding: 2.25rem 2rem;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+    transition: all var(--ease-base);
+    display: flex;
+    flex-direction: column;
+}
+
+.why-card:hover {
+    border-color: #2563EB;
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-3px);
+}
+
+.why-number {
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--accent-cobalt);
+    background: var(--accent-cobalt-light);
+    border: 1.5px solid var(--accent-cobalt-border);
+    width: fit-content;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-xs);
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.04em;
+}
+
+.why-card h3 {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #020617;
+    margin-bottom: 0.75rem;
+}
+
+.why-card p {
+    font-size: 1.05rem;
+    color: #0A0F1D;
+    font-weight: 500;
+    line-height: 1.68;
+}

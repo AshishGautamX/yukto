@@ -1,0 +1,85 @@
+/* ==========================================================================
+   FLOATING BUTTONS (WHATSAPP & SCROLL TO TOP)
+   ========================================================================== */
+
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--color-wa);
+    color: #FFFFFF;
+    box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform var(--ease-fast), box-shadow var(--ease-fast);
+}
+
+.floating-whatsapp-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.55);
+    background: var(--color-wa-hover);
+}
+
+.floating-tooltip {
+    position: absolute;
+    right: 62px;
+    background: #111827;
+    color: #FFFFFF;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(6px);
+    transition: all var(--ease-fast);
+    box-shadow: var(--shadow-micro);
+}
+
+.floating-whatsapp-btn:hover .floating-tooltip {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Scroll To Top Button (positioned directly above floating WhatsApp) */
+.scroll-to-top {
+    position: fixed;
+    bottom: 5.85rem;
+    right: 2rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid var(--border-mid);
+    color: var(--text-primary);
+    box-shadow: var(--shadow-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(8px);
+    transition: all var(--ease-fast);
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background: var(--accent-cobalt);
+    color: #FFFFFF;
+    border-color: var(--accent-cobalt-hover);
+    transform: translateY(-2px);
+}

@@ -1,0 +1,50 @@
+/* ==========================================================================
+   CTA SECTION ("READY TO SCALE WITHOUT BURNOUT?")
+   ========================================================================== */
+
+.cta-section {
+    padding: var(--space-3xl) 0;
+    background: #FFFFFF;
+    border-top: 1.5px solid #94A3B8;
+    border-bottom: 1.5px solid #94A3B8;
+    position: relative;
+}
+
+.cta-content {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    color: #020617;
+    margin-bottom: var(--space-xs);
+    line-height: 1.15;
+}
+
+.cta-subtitle {
+    font-size: 1.22rem;
+    color: #0A0F1D;
+    font-weight: 500;
+    line-height: 1.65;
+    margin-bottom: var(--space-xl);
+}
+
+.cta-buttons-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.15rem;
+    margin-bottom: 1.35rem;
+    flex-wrap: wrap;
+}
+
+.cta-note {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #020617;
+    letter-spacing: 0.02em;
+}
